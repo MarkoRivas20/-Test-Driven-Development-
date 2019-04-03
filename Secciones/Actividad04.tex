@@ -1,69 +1,48 @@
-\section{Test Driven Development (TDD)} 
+\section{Proceso de diseño de software combinado con TD} 
 \textbf{}\\
 \begin{flushleft}
-\begin{center}	
-\end{center}
+
+
 \begin{itemize}
-\textbf{1.	¿Qué es el TDD? }
-\textbf{}\\
-Es una metodología de desarrollo cuyo objetivo es crear primero las pruebas y luego escribir el software. Es decir, desarrollo guiado por pruebas.
+
+
+\item 1.El Cliente escribe su historia de usuario.
 
 \textbf{}\\
-\textbf{2.	TDD o Test-Driven Development }
+\item 2.Se escriben junto con el cliente los criterios de aceptación de esta historia, desglosándolos mucho para simplificarlos todo lo posible.
+
 
 \textbf{}\\
-(desarrollo dirigido por test) es una práctica de programación que consiste en escribir primero las pruebas (generalmente unitarias), después escribir el código fuente que pase la prueba satisfactoriamente y, por último, refactorizar el código escrito. Con esta práctica se consigue entre otras cosas: un código más robusto, más seguro, más mantenible y una mayor rapidez en el desarrollo.
+\item 3.Se escoge el criterio de aceptación más simple y se traduce en una prueba unitaria.
 
 \textbf{}\\
 
-\textbf{3.	Se divide en 3 sub-prácticas}
+\item 4.Se comprueba que esta prueba falla.
 
 \textbf{}\\
-Test-First: las pruebas se escriben antes de escribir el propio código, y las mismas son escritas por los propios desarrolladores, esto busca que los mismos logren un entendimiento de lo que deben desarrollar mediante la construcción del código que lo va a probar.
+
+\item 5.Se escribe el código que hace pasar la prueba.
 
 \textbf{}\\
-Automatización: las pruebas deben ser escritas en código, y esto permite que se ejecuten automáticamente las veces que sea necesario, y el solo hecho de ejecutar las pruebas debe mostrar si la ejecución fue correcta o no.
+
+\item 6.Se ejecutan todas las pruebas automatizadas.
 
 \textbf{}\\
-Refactorizar el código: permite mantener la calidad de la arquitectura, se cambia el diseño sin cambiar la funcionalidad, manteniendo las pruebas como reaseguro.
+
+\item 8.Se refactoriza y se limpia el código.
 
 \textbf{}\\
-Pruebas Unitarias y Simulación de objetos
+
+\item 9.Se vuelven a pasar todas las pruebas automatizadas para comprobar que todo sigue funcionando.
 
 \textbf{}\\
-Otra alternativa para realizar la simulación, consiste en conseguir probar el código unitariamente, esto significa aislarse de todos los recursos externos, es decir no depender de la infraestructura de red, o de un determinado entorno, o incluso del proceso que ejecutará nuestro código cuando esté en producción. Cargaremos las pruebas y el código a probar en un proceso encargado de gestionar la ejecución de las pruebas.
-\begin{center}
-    \includegraphics[width=12cm]{./Imagenes/TDD}
-    \end{center}
-\textbf{Tipos de Test}
-\textbf{}\\
-Test de aceptación: es un test que permite comprobar que se está cumpliendo con un requerimiento del negocio. Son pruebas escritas en lenguaje del cliente pero que puede ser ejecutado con la máquina. Esto nos permite probar que el software que estamos desarrollando cumple con las expectativas del cliente y de los usuarios.
 
-\textbf{}\\
-Test funcionales: si bien, siendo estrictos, todos los tests son funcionales ya que prueban alguna funcionalidad, esta expresión es utilizada para determinar a aquellas pruebas que agrupan a varios tests de aceptación y prueban alguna funcionalidad del negocio propiamente dicha.
+\item Volvemos al punto 3 con los criterios de aceptación que falten y repetimos el ciclo una y otra vez hasta completar nuestra aplicación.
 
-\textbf{}\\
-Test de sistema: integra varias partes del sistema, incluso puede probar toda la aplicación o varias funcionalidades juntas. Estos tests se comportan de manera similar y buscan emular el comportamiento de los usuarios del sistema.
+	
 
-\textbf{}\\
-Test unitarios: son los tests ineludibles, son los necesarios y los más importantes para los desarrolladores, todo test unitario debe ser rápido, atómico, inocuo e independiente, sino cumple con estas cuatro premisas no es un test unitario.
 
-\textbf{}\\
-\item  La implementación de las funciones justas que el cliente necesita y no más.
-
-\item  La minimización del número de defectos que llegan al software en fase de producción.
-
-\item La producción de software modular, altamente reutilizable y preparado para el cambio.
 \end{itemize} 
 
 
-
-
-
-
-
 \end{flushleft}
-
-
-
-
